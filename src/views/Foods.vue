@@ -16,7 +16,7 @@
               v-model="search"
               type="text"
               class="form-control"
-              placeholder="Skincare yang ingin Anda cari..."
+              placeholder="Skincare yang Anda cari .."
               aria-label="Cari"
               aria-describedby="basic-addon1"
               @keyup="searchFood"
@@ -70,8 +70,8 @@ export default {
     },
     searchFood() {
       axios
-      .get("/db.json?q="+this.search)
-      .then((response) => this.setProducts(response.data.products))
+      .get("/db.json")
+      .then((response) => this.setProducts(response.data.products.find(item => item.nama == this.search)))
       .catch((error) => console.log(error));
     }
   },

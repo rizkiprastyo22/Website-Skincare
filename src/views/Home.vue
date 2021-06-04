@@ -46,8 +46,8 @@
         </div>
 
         <div class="row mb-4">
-          <div class="col-md-4 mt-4" v-for="product in products" :key="product.id">
-            <CardProduct :product="product"/>
+         <div class="col-md-4 mt-4" v-for="product in kandungans" :key="product.id">
+            <CardKandungan :product="product"/>
           </div>
           <div class="col-md-4 mt-5 mb-5">
             <router-link to="/kandungan" class="btn btn-success float-right"><b-icon-eye></b-icon-eye> Selengkapnya</router-link>
@@ -88,7 +88,7 @@ export default {
     Navbar,
     Hero,
     CardProduct,
-    CardKandungan,
+    CardKandungan
   },
   data() {
     return {
