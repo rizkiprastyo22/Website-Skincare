@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Foods from '../views/Foods.vue'
-import FoodDetail from '../views/FoodDetail.vue'
+import Skincare from '../views/Skincare.vue'
+import SkincareDetail from '../views/SkincareDetail.vue'
 import Kandungan from '../views/Kandungan.vue'
 import KandunganDetail from '../views/KandunganDetail.vue'
-import Keranjang from '../views/Keranjang.vue'
-import PesananSukses from '../views/PesananSukses.vue'
 
 Vue.use(VueRouter)
 
@@ -17,14 +15,14 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/foods',
-    name: 'Foods',
-    component: Foods
+    path: '/skincare',
+    name: 'skincare',
+    component: Skincare
   },
   {
-    path: '/foods/:id',
-    name: 'FoodDetail',
-    component: FoodDetail
+    path: '/skincare/:id',
+    name: 'SkincareDetail',
+    component: SkincareDetail
   },
   {
     path: '/kandungan',
@@ -35,24 +33,6 @@ Vue.use(VueRouter)
     path: '/kandungan/:id',
     name: 'KandunganDetail',
     component: KandunganDetail
-  },
-  {
-    path: '/keranjang',
-    name: 'Keranjang',
-    component: Keranjang
-  },
-  {
-    path: '/pesanan-sukses',
-    name: 'PesananSukses',
-    component: PesananSukses
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
 ]
 

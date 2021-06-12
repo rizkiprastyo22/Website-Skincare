@@ -7,11 +7,11 @@
 }
 
 .btn-success {
-    background-color: #4EB883;
+    background-color: #117864;;
 }
 
 .badge-success {
-    background-color: #4EB883;
+    background-color: #117864;;
 }
 
 .card-product {
@@ -36,4 +36,37 @@
 
 .img-fluid {
     border-radius: 15px;
+}
+
+.background{
+    border-radius: 30px;
+    height: 300px;
+    width: 100%;
+}
+
+.backsmall{
+    border-radius: 15px;
+    margin-left: 5px;
+    height: 300px;
+    width: 97%;
+}
+
+.kesimpulan-besar{
+    border-radius: 15px;
+    background-color: rgb(222, 233, 252);
+    width: 100%;
+}
+
+.kesimpulan{
+    border-radius: 15px;
+    background-color: rgb(222, 233, 252);
+    width: 97%;
+    margin-left: 5px;
+}
+
+.imgsmall{
+    /* border-radius: 15px; */
+    margin-left: 10px;
+    /* height: 300px;
+    width: 96%; */
 }

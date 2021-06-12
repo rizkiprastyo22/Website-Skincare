@@ -26,7 +26,7 @@
             <h3>Popular <strong>Skincare</strong></h3>
           </div>
           <div class="col">
-            <router-link to="/foods" class="btn btn-success float-right"><b-icon-eye></b-icon-eye> Selengkapnya</router-link>
+            <router-link to="/skincare" class="btn btn-success float-right"><b-icon-eye></b-icon-eye> Selengkapnya</router-link>
           </div>
         </div>
 
@@ -65,7 +65,7 @@
             <CardProduct :product="product"/>
           </div>
           <div class="col-md-4 mt-5">
-            <router-link to="/foods" class="btn btn-success float-right"><b-icon-eye></b-icon-eye> Selengkapnya</router-link>
+            <router-link to="/skincare" class="btn btn-success float-right"><b-icon-eye></b-icon-eye> Selengkapnya</router-link>
           </div>
         </div>        
       </div>
